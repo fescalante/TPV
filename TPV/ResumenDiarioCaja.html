@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+	<title>Informe Diario de Caja</title>
+		<style type="text/css">
+	table#myTable
+	{
+		width: 400px;
+		border: 1px solid #6c7aa9;
+		border-collapse: collapse;
+		border-spacing: 0px;
+		margin-left: 30px;
+		*border-collapse: expression('collapse', cellSpacing = '0px');
+	}
+	table#myTable tbody tr
+	{
+		background-color: #ffffff;
+		color: #000000;
+	}
+	table#myTable tbody tr.tswOddRow
+	{
+		background-color: #edf3ff;
+	}
+	table#myTable td
+	{
+		border: 1px solid #cccccc;
+		padding: 2px;
+		font-family: verdana;
+		font-size: 10.0px;
+	}
+	table#myTable thead
+	{
+		background-color: #6c7aa9;
+		color: #ffffff;
+	}
+	table#myTable th
+	{
+		text-align: center;
+		height: 20px;
+		border: 0px solid #cccccc;
+		padding: 2px;
+		font-family: verdana;
+		font-size: 12.0px;
+	}
+	</style>
+	</head>
+	<body>
+	<div id="cabecera">
+		<div id="h1"><span style="font:24px Verdana, serif; margin-left:25.0px">Viveros Escalante, S.L.</span></div>
+		<div id="h2"><span style="font:18px Verdana, serif; margin-left:25px; color:#FF7F00">Parte Diario de Caja: ##FechaProcesado</span></div>
+		<hr width="100%"/>
+		
+		<table id="myTable" class="myTable">
+		<thead>
+			<tr>
+				<th width="125px">Nº VENTA</th>
+				<th width="125px">HORA</th>
+				<th width="150px">IMPORTE</th>
+			</tr>
+		</thead>
+		<tbody id="##BodyTablaDetalles">
+			<tr>
+				<td align="center">##Ticket</td>
+				<td align="center">##Hora</td>
+				<td align="right">##Importe</td>
+			</tr>
+		</tbody>
+		</table>
+		
+		
+		<table id="myTable" class="##TablaTotales">
+		<thead>
+			<tr>
+				<th width="125px"></th>
+				<th width="125px">TOTAL</th>
+				<th width="150px">##TotalImporte</th>
+			</tr>
+		</thead>
+		</table>
+	</body>
+</html>
